@@ -1,4 +1,339 @@
-body{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#blocPrincipal {
+    width: 100%;
+    max-width: 2000px;
+
+}
+
+.ecran {
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+section {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* ecran 1 */
+.ecran1 {
+    width: 100%;
+    background-color: rgba(129, 38, 38, 0.329);
+}
+
+/* ecran 2 */
+.ecran2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(13, 97, 110);
+    border: 10px solid rgb(37, 37, 37);
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 3px 5px 31px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 3px 5px 31px 5px rgba(0,0,0,0);
+
+}
+
+/* ecran 3*/
+.ecran3 {
+    width: 100%;
+    background: rgb(63, 94, 251);
+
+}
+
+/* ecran 4*/
+.ecran4 {
+    width: 100%;
+}
+
+/* ecran 5*/
+.ecran5 {
+    width: 100%;
+}
+
+/* ecran 6*/
+.ecran6 {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: rgb(13, 97, 110);
+    border: 5px 8px  solid;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 3px 5px 31px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 3px 5px 31px 5px rgba(0,0,0,0);
+
+}
+
+li {
+    font-weight: bold;
+    color: white;
+    list-style-type: none;
+    border: 5px solid #276a91;
+    border-radius: 8px 40px 8px 26px;
+    color: #e0dfdc;
+    background: #556677;
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+    color: #e0dfdc;
+    background: #556677;
+    background: #333333;
+    padding: 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+
+
+}
+
+nav {
+    background: rgb(13, 97, 110);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border: 5px solid;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 3px 5px 31px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 3px 5px 31px 5px rgba(0,0,0,0);
+
+}
+
+label.logo {
+    color: rgb(250, 250, 250);
+    font-size: 2rem;
+    line-height: 70px;
+    padding: 0 100px;
+    font-weight: bold;
+    width: 55%;
+    text-align: left;
+    border: 5px solid;
+    border-radius: 3px;
+    color: #FFFFFF;
+    background: #333333;
+    background: #3218a76e;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+
+}
+
+nav ul {
+    width: 52%;
+    margin-right: 24%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+nav ul li {
+    text-align: center;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    /*background: #1f1f1f;*/
+    color: #1f1f1f;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width:952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+}
+
+
+@media (max-width:858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav {
+        padding: 0 20px;
+    }
+
+    label.logo {
+        width: 90%;
+        text-align: center;
+    }
+
+    nav ul {
+        display: inline-block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 190px;
+        z-index: 99;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        width: 100%;
+        margin: 0;
+        border: 5px solid;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #05be4c;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+#champ {
+    position: absolute;
+    width: 100%;
+}
+
+article {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(138, 209, 121, 0.664);
+    color: #1f1f1f;
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10px;
+    border: 10px solid;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 12px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 12px 5px rgba(0,0,0,0);
+    
+}
+
+.container {
+    width: 40%;
+    margin: auto;
+    background: rgb(13, 97, 110);
+}
+
+.progressContainer {
+    width: 100%;
+    padding: 8px 0;
+
+}
+
+.info {
+    padding: 8px 0;
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progressBar {
+    width: 100%;
+    height: 20px;
+    background: rgb(51, 51, 51);
+    border-radius: 20px;
+}
+
+.bar {
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.barOne {
+    max-width: 90%;
     background: red;
-    color: red;
+    animation: animate 4s ease-in-out;
+}
+
+.barTwo {
+    max-width: 70%;
+    background: #2db2df;
+    animation: animate 5s ease-in-out;
+}
+
+.barThree {
+    max-width: 40%;
+    background: orange;
+    animation: animate 3s ease-in-out;
+}
+
+.barFour {
+    max-width: 50%;
+    background: lightgreen;
+    animation: animate 3s ease-in-out;
+}
+
+@keyframes animate {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
